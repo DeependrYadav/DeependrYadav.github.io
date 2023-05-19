@@ -80,8 +80,8 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* nav-menu styling */
-.nav-menu{
+/* navbar styling */
+.navbar{
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -89,32 +89,32 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
-.nav-menu.sticky{
+.navbar.sticky{
     padding: 15px 0;
     background: crimson;
 }
-.nav-menu .max-width{
+.navbar .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav-menu .logo a{
+.navbar .logo a{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
-.nav-menu .logo a span{
+.navbar .logo a span{
     color: crimson;
     transition: all 0.3s ease;
 }
-.nav-menu.sticky .logo a span{
+.navbar.sticky .logo a span{
     color: #fff;
 }
-.nav-menu .menu li{
+.navbar .menu li{
     list-style: none;
     display: inline-block;
 }
-.nav-menu .menu li a{
+.navbar .menu li a{
     display: block;
     color: #fff;
     font-size: 18px;
@@ -122,10 +122,10 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-.nav-menu .menu li a:hover{
+.navbar .menu li a:hover{
     color: crimson;
 }
-.nav-menu.sticky .menu li a:hover{
+.navbar.sticky .menu li a:hover{
     color: #fff;
 }
 
@@ -689,7 +689,7 @@ footer span a:hover{
     .menu-btn i.active:before{
         content: "\f00d";
     }
-    .nav-menu .menu{
+    .navbar .menu{
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -700,13 +700,13 @@ footer span a:hover{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    .nav-menu .menu.active{
+    .navbar .menu.active{
         left: 0;
     }
-    .nav-menu .menu li{
+    .navbar .menu li{
         display: block;
     }
-    .nav-menu .menu li a{
+    .navbar .menu li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
