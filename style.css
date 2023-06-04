@@ -313,12 +313,12 @@ section .title::after{
 }
 
 .services .serv-content .card1{
-    width: calc(75% - 20px);
+    width: calc(95% - 20px);
     margin: auto;
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 50px 25px;
+    padding: 70px 45px;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-bottom: 20px;
