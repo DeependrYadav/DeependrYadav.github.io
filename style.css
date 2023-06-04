@@ -312,6 +312,45 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
+.services .serv-content .card1{
+    width: calc(75% - 20px);
+    margin: auto;
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+.services .serv-content .card1:hover{
+    background: crimson;
+}
+.services .serv-content .card1 .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card1:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card1 i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.services .serv-content .card1:hover i{
+    color: #fff;
+    
+}
+.services .serv-content .card1 .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
 /* skills section styling */
 
 .skills .title::after{
