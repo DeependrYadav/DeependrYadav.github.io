@@ -325,6 +325,9 @@ section .title::after{
 }
 .services .serv-content .card1:hover{
     background: crimson;
+    .contrib-number{
+        color: #222;
+    }
 }
 .services .serv-content .card1 .box{
     transition: all 0.3s ease;
@@ -343,13 +346,13 @@ section .title::after{
 }
 .services .serv-content .card1:hover i{
     color: #fff;
-    
 }
 .services .serv-content .card1 .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
 
 /* skills section styling */
 
@@ -861,4 +864,19 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+}
+.float-left{
+    text-align: left;
+    font-size: xx-small;
+    text-decoration: none;
+    color: #fff;
+}
+.float-left > a{
+    color: #fff;
+}
+.contrib-number {
+    color: crimson;
+}
+.contrib-number:hover{
+    color: #f1f1f1;
 }
