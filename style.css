@@ -881,3 +881,9 @@ footer span a:hover{
 .contrib-number:hover{
     color: #f1f1f1;
 }
+
+.project-card > .box > .home-img{
+    width: 100%;
+    border-radius: 6px;
+    border: 3px solid crimson;
+}
