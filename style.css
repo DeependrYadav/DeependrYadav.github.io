@@ -326,7 +326,8 @@ section .title::after{
 .services .serv-content .card1:hover{
     background: crimson;
     .contrib-number{
-        color: #222;
+        color: #808080;
+        font-weight: 500;
     }
 }
 .services .serv-content .card1 .box{
