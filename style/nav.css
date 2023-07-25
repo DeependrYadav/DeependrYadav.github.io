@@ -1,146 +1,137 @@
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 30px;
-    align-items: center;
-    min-height: 8vh;
-    background-color: rgb(230,230,230);
-    backdrop-filter: blur(6px);
-    z-index: 10;
-    /* border: 1px solid red; */
-  }
-  .logo{
-    /* border: 1px solid red; */
-    background: rgb(230,230,230);
-    width: 30%;
-  }
-  .logo img{
-    width: 90%;
-    background-color: rgb(230,230,230);
-   cursor: pointer;
-  }
-  .logo:hover{
-    transform: scale(1.08);
-    
-  }
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #0005;
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+
+.logo {
+  color: rgb(89, 226, 197);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  background-color: #0000;
+}
+
+.logo > h4 {
+  background-color: #0000;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  background-color: #0000;
+}
+
+.nav-links li {
+  list-style: none;
+  align-self: center;
+  background-color: #0000;
+}
+
+.nav-links a {
+  color: rgb(197, 210, 254);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #0000;
+}
+
+#resume-button-1 {
+  padding: 7px 8px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid rgb(89, 226, 197);
+  background-color: #0000;
+  cursor: pointer;
+}
+#resume-link-1 {
+  color: rgb(89, 226, 197);
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+  background-color: #0000;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
   .nav-links {
+    width: 60%;
+    background-color: #0000;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #0006;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
-    background-color: #0000;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
   }
-  
+
   .nav-links li {
-    list-style: none;
-    align-self: center;
-    background-color: #0000;
-  }
-  
-  .nav-links a {
-    color: #606163;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 16px;
-    background-color: #0000;
-  }
-  .nav-links a:hover{
-    color: rgb(242, 49, 49);
-  }
-  #resume-button-1:hover{
-    transform: scale(1.08);
-  }
-  #resume-button-1{
-    padding: 7px 8px;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-    border: none;
-    background-color: #0000;
-    
-    cursor: pointer;
-  } 
-  #resume-link-1 {
-    color: rgb(242, 49, 49);
-    text-decoration: none;
-  }
-  
-  .burger {
-    display: none;
-    background-color: #0000;
-  }
-  
-  .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: rgb(83, 81, 81);
-    margin: 5px;
-    transition: all 0.3s ease;
-  }
-  
-  @media screen and (max-width: 1024px) {
-    .nav-links {
-      width: 60%;
-      background-color: #0000;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    body {
-      overflow-x: hidden;
-    }
-  
-    .nav-links {
-      position: fixed;
-      right: 0px;
-      height: 92vh;
-      top: 8vh;
-      background-color: initial;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 30%;
-      transform: translateX(100%);
-      transition: transform 0.5s ease-in;
-    }
-  
-    .nav-links li {
-      opacity: 0;
-    }
-  
-    .burger {
-      display: block;
-      cursor: pointer;
-    }
-  }
-  
-  .nav-active {
-    transform: translateX(0%);
-  }
-  
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  
-  .toggle .line2 {
     opacity: 0;
   }
-  
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+
+  .burger {
+    display: block;
+    cursor: pointer;
   }
-  
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

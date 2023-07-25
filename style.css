@@ -1,442 +1,400 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: rgb(230,230,230);
-    font-family: "Poppins", sans-serif;
-    scroll-behavior: smooth;
-  }
-  .heading {
-    color: rgb(197, 210, 254);
-    text-align: center;
-    margin-top: 70px;
-  }
-  
-  body{
-    height: 500vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(10, 25, 47);
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
-::-webkit-scrollbar{
-    width: 15px;
-}
-::-webkit-scrollbar-track{
-    background: rgb(110, 105, 103);
-}
-::-webkit-scrollbar-thumb{
-    background:  linear-gradient(rgb(199, 218, 181) ,rgb(120, 203, 255));
-    border-radius: 8px;
+.heading {
+  color: rgb(197, 210, 254);
+  text-align: center;
+  margin-top: 70px;
 }
 
-  /* home section */
-  #home {
-    width: 85%;
-    margin: auto;
-    height: 85vh;
-    margin-top: 80px;
-    display: table;
-    /* border: 1px dashed red; */
-  }
-  #home > div {
-    display: table-cell;
-    vertical-align: middle;
-    /* border: 2px dashed rgb(71, 61, 61); */
-  }
+/* ************************************************home section******************************************************** */
+#home {
+  width: 85%;
+  margin: auto;
+  height: 85vh;
+  margin-top: 80px;
+  display: table;
+}
+#home > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+#home > div > h2 {
+  color: rgb(225, 231, 253);
+  font-size: 4vw;
+}
+#home > div > h2 > img {
+  width: 5vw;
+}
+
+#home_Name {
+  color: rgb(197, 210, 254);
+  font-size: 7vw;
+}
+#home_Dis {
+  color: rgb(125, 145, 207);
+  font-size: 5vw;
+}
+#homeResumeBtnDiv {
+  width: 60%;
+  margin-top: 40px;
+}
+#resume-button-2 {
+  padding: 7px 8px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 24px;
+  border: 1px solid rgb(89, 226, 197);
+  background-color: #0000;
+  cursor: pointer;
+  transition: 0.4s ease-in-out all;
+}
+#resume-button-2 > a {
+  color: rgb(89, 226, 197);
+  text-decoration: none;
+}
+#resume-link-2 > button:hover {
+  transform: scale(1.05);
+  color: white;
+  background-color: rgb(89, 226, 197);
+}
+
+/* ***********************************************About section******************************************************** */
+#about_main {
+  width: 75%;
+  margin: auto;
+  margin-top: 40px;
+  height: 74vh;
+}
+
+#about_inner {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#profile_img {
+  max-height: 20vw;
+  min-height: 20vw;
+  max-width: 20vw;
+  min-width: 20vw;
+  border: 5px solid rgb(89, 226, 197);
+  font-size: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  align-self: center;
+}
+
+#profile_img img {
+  max-height: 20vw;
+  min-height: 20vw;
+  max-width: 20vw;
+  min-width: 20vw;
+}
+
+#user_details {
+  width: 50%;
+  align-self: center;
+}
+
+#user_details > h2 {
+  color: rgb(125, 145, 207);
+  font-size: 3vw;
+  text-align: center;
+}
+
+#user_details > p {
+  color: rgb(123, 134, 162);
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ***********************************************skills section******************************************************** */
+#skills {
+  margin-top: 70px;
+  border: 1px solid rgb(10, 25, 47);
+}
+#skills_main {
+  width: 75%;
+  margin: auto;
+  margin-top: 40px;
+  min-height: 74vh;
+}
+
+#skill {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  align-items: center;
+  gap: 20px;
+}
+
+.skills-card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+}
+.skills-card-img {
+  font-size: 120px;
+  align-self: center;
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+}
+.skills-card-name {
+  color: rgb(125, 145, 207);
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+}
+.skills-card:hover {
+  background-color: rgb(46, 58, 82);
+}
+
+.skills-card:hover .skills-card-name {
+  transform: scale(1.05);
+  background-color: rgb(46, 58, 82);
+}
+.skills-card:hover .skills-card-img {
+  transform: scale(1.05);
+  background-color: rgb(46, 58, 82);
+}
+
+/* ************************************************ Projects section  ******************************************************** */
+
+#projects {
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  min-height: 74vh;
+}
+
+#displayprojects {
+  margin: auto;
+  margin-top: 30px;
+}
+.project-card {
+  background-color: rgb(29, 70, 82);
+  display: flex;
+  text-align: center;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.projectdis {
+  background-color: rgb(29, 70, 82);
+  width: 100%;
+  padding: 20px 30px;
+  transition: 0.4s ease-in-out all;
+}
+.project-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: rgb(197, 210, 254);
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+}
+.projectdis p {
+  font-size: 19px;
+  margin-bottom: 10px;
+  color: rgb(123, 134, 162);
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+}
+.projectimg {
+  max-height: 20vw;
+  min-height: 20vw;
+  max-width: 30vw;
+  min-width: 30vw;
+  transition: 0.4s ease-in-out all;
+}
+.logodiv {
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.project-tech-stack > span {
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+  font-weight: bolder;
+  color: rgb(125, 145, 207);
+}
+.project-deployed-link {
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+}
+.project-github-link {
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+}
+.gitlogo {
+  color: white;
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+  font-size: 40px;
+}
+.netlifylogo {
+  color: white;
+  background-color: rgb(29, 70, 82);
+  transition: 0.4s ease-in-out all;
+  font-size: 40px;
+}
+.gitlogo:hover {
+  transform: scale(1.2);
+}
+.netlifylogo:hover {
+  transform: scale(1.1);
+}
+.project-card:hover .projectdis {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .project-title {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .projectdis > p {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .projectimg {
+  transform: scale(1.05);
+}
+.project-card:hover .logodiv {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .netlifylogo {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .gitlogo {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .project-deployed-link {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .project-tech-stack > span {
+  background-color: rgb(46, 58, 82);
+}
+.project-card:hover .project-github-link {
+  background-color: rgb(46, 58, 82);
+}
+
+/* ************************************************ GitHub calendar ******************************************************** */
+
+.react-activity-calendar {
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  color: white;
+}
+#stats_imgs {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+/* ************************************************ media Query ******************************************************** */
+
+#contact {
+  width: 70%;
+  margin: auto;
+  min-height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}
+.contact_card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contact_card iconify-icon {
+  font-size: 4vw;
+}
+
+.contact_card a,
+p {
+  font-size: 20px;
+  color: rgb(197, 210, 254);
+}
+/* ************************************************ media Query ******************************************************** */
+
+@media screen and (max-width: 768px) {
+  /* ....................home...................... */
   #home > div > h2 {
-    color: rgb(228, 150, 4);
-    font-size: 5vw;
+    font-size: 7vw;
   }
-  
+  #home > div > h2 > img {
+    width: 8vw;
+  }
+
   #home_Name {
-    color: rgb(141, 146, 161);
-    font-size: 5vw;
+    font-size: 10vw;
   }
   #home_Dis {
-    color: rgb(125, 145, 207);
-    font-size: 4vw;
+    font-size: 8vw;
   }
-  #homeResumeBtnDiv {
-    width: 60%;
-    margin-top: 40px;
+  #contact {
+    grid-template-columns: repeat(2, 1fr);
   }
-  #resume-button-2 {
-    padding: 7px 8px;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 24px;
-    /* border: 1px solid orangered; */
-    background-color: #0000;
-    cursor: pointer;
-    transition: 0.4s ease-in-out all;
+  .contact_card iconify-icon {
+    font-size: 5vw;
   }
-  #resume-button-2 > a {
-    color: orange;
-    text-decoration: none;
+
+  .contact_card a,
+  p {
+    font-size: 10px;
+    color: rgb(197, 210, 254);
   }
-  #resume-button-2:hover {
-    transform: scale(1.08);
-    color: rgb(214, 191, 191);
-  }
-  
-  #about_main {
-    width: 85%;
-    margin: auto;
-    margin-top: 40px;
-    height: 75vh;
-    /* border: 1px dashed red; */
-  }
-  
+  /* ....................about...................... */
   #about_inner {
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
   }
-  
   #profile_img {
     max-height: 30vw;
     min-height: 30vw;
     max-width: 30vw;
     min-width: 30vw;
-    border: 3px solid rgb(201, 134, 10);
-    font-size: 0;
-    border-radius: 50%;
-    overflow: hidden;
-    align-self: center;
   }
-  
   #profile_img img {
     max-height: 30vw;
     min-height: 30vw;
     max-width: 30vw;
     min-width: 30vw;
   }
-  
   #user_details {
-    width: 50%;
-    align-self: center;
+    width: 80%;
+    margin-top: 30px;
   }
-  
   #user_details > h2 {
     color: rgb(125, 145, 207);
-    font-size: 3vw;
-    text-align: center;
+    font-size: 5vw;
   }
-  
-  #user_details > p {
-    color: rgb(123, 134, 162);
-    margin-top: 15px;
-    font-size: 20px;
-    text-align: center;
-  }
-  
+  /* project */
+}
 
-
-
-/*   
-  #skills {
-    margin-top: 70px;
-    border: 1px solid rgb(10, 25, 47);
-  } */
-
-  
-  #skills_main {
-    width: 75%;
-    margin: auto;
-    margin-top: 40px;
-    min-height: 74vh;
-  }
-  
-  #skill {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .skills-card {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    background-color: rgb(241,239,239);
-    transition: 0.4s ease-in-out all;
-  }
-  .skills-card-img {
-    font-size: 120px;
-    align-self: center;
-    background-color: rgb(241,239,239);
-    transition: 0.4s ease-in-out all;
-  }
-  .skills-card-name {
-    color: rgb(125, 145, 207);
-    text-align: center;
-    margin-top: 20px;
-    background-color: rgb(241,239,239);
-    transition: 0.4s ease-in-out all;
-  }
-  /* .skills-card:hover {
-    background-color: rgb(87, 98, 119);
-  } */
-  
-  .skills-card:hover .skills-card-name {
-    transform: scale(1.05);
-    /* background-color: rgb(46, 58, 82); */
-  }
-  .skills-card:hover .skills-card-img {
-    transform: scale(1.05);
-    /* background-color: rgb(80, 89, 107); */
-  }
-  
-  /* ************************************************ Projects section  ******************************************************** */
-  
-  #projects {
-    width: 70%;
-    margin: auto;
-    margin-top: 40px;
-    min-height: 74vh;
-  }
-  
-  #displayprojects {
-    margin: auto;
-    margin-top: 30px;
-  }
+@media screen and (max-width: 1420px) {
   .project-card {
-    background-color: rgb(29, 70, 82);
-    display: flex;
-    text-align: center;
-    margin-top: 30px;
-    overflow: hidden;
-  }
-  .projectdis {
-    background-color: rgb(29, 70, 82);
-    width: 100%;
-    padding: 20px 30px;
-    transition: 0.4s ease-in-out all;
-  }
-  .project-title {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: rgb(197, 210, 254);
-    background-color: rgb(29, 70, 82);
-    transition: 0.4s ease-in-out all;
-  }
-  .projectdis p {
-    font-size: 19px;
-    margin-bottom: 10px;
-    color: rgb(123, 134, 162);
-    background-color: rgb(29, 70, 82);
-    transition: 0.4s ease-in-out all;
+    flex-direction: column;
   }
   .projectimg {
-    max-height: 20vw;
-    min-height: 20vw;
-    max-width: 30vw;
-    min-width: 30vw;
-    transition: 0.4s ease-in-out all;
+    align-self: center;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 50%;
+    min-height: 50%;
   }
-  .logodiv {
-    background-color: rgb(29, 70, 82);
-    transition: 0.4s ease-in-out all;
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  .project-tech-stack > span {
-    background-color: rgb(29, 70, 82);
-    transition: 0.4s ease-in-out all;
-    font-weight: bolder;
-    color: rgb(125, 145, 207);
-  }
-  .project-deployed-link {
-    background-color: rgb(29, 70, 82);
-    transition: 0.4s ease-in-out all;
-  }
-  .project-github-link {
-    background-color: rgb(29, 70, 82);
-    transition: 0.4s ease-in-out all;
-  }
-  .gitlogo {
-    color: white;
-    background-color: rgb(29, 70, 82);
-    transition: 0.4s ease-in-out all;
-    font-size: 40px;
-  }
-  .netlifylogo {
-    color: white;
-    background-color: rgb(29, 70, 82);
-    transition: 0.4s ease-in-out all;
-    font-size: 40px;
-  }
-  .gitlogo:hover {
-    transform: scale(1.2);
-  }
-  .netlifylogo:hover {
-    transform: scale(1.1);
-  }
-  .project-card:hover .projectdis {
-    background-color: rgb(46, 58, 82);
-  }
-  .project-card:hover .project-title {
-    background-color: rgb(46, 58, 82);
-  }
-  .project-card:hover .projectdis > p {
-    background-color: rgb(46, 58, 82);
-  }
-  .project-card:hover .projectimg {
-    transform: scale(1.05);
-  }
-  .project-card:hover .logodiv {
-    background-color: rgb(46, 58, 82);
-  }
-  .project-card:hover .netlifylogo {
-    background-color: rgb(46, 58, 82);
-  }
-  .project-card:hover .gitlogo {
-    background-color: rgb(46, 58, 82);
-  }
-  .project-card:hover .project-deployed-link {
-    background-color: rgb(46, 58, 82);
-  }
-  .project-card:hover .project-tech-stack > span {
-    background-color: rgb(46, 58, 82);
-  }
-  .project-card:hover .project-github-link {
-    background-color: rgb(46, 58, 82);
-  }
-  
-  /* ************************************************ GitHub calendar ******************************************************** */
-  
-  .react-activity-calendar {
-    width: 70%;
-    margin: auto;
-    margin-top: 40px;
-    color: white;
-  }
-  #stats_imgs {
-    width: 40%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-  }
-  
-  /* ************************************************ media Query ******************************************************** */
-  
-  #contact {
-    width: 70%;
-    margin: auto;
-    min-height: 40vh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    gap: 20px;
-  }
-  .contact_card {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .contact_card iconify-icon {
-    font-size: 4vw;
-  }
-  
-  .contact_card a,
-  p {
-    font-size: 20px;
-    color: rgb(197, 210, 254);
-  }
-  /* ************************************************ media Query ******************************************************** */
-  
-  @media screen and (max-width: 768px) {
-    /* ....................home...................... */
-    #home > div > h2 {
-      font-size: 7vw;
-    }
-    #home > div > h2 > img {
-      width: 8vw;
-    }
-  
-    #home_Name {
-      font-size: 10vw;
-    }
-    #home_Dis {
-      font-size: 8vw;
-    }
-    #contact {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .contact_card iconify-icon {
-      font-size: 5vw;
-    }
-  
-    .contact_card a,
-    p {
-      font-size: 10px;
-      color: rgb(197, 210, 254);
-    }
-    /* ....................about...................... */
-    #about_inner {
-      flex-direction: column;
-    }
-    #profile_img {
-      max-height: 30vw;
-      min-height: 30vw;
-      max-width: 30vw;
-      min-width: 30vw;
-    }
-    #profile_img img {
-      max-height: 30vw;
-      min-height: 30vw;
-      max-width: 30vw;
-      min-width: 30vw;
-    }
-    #user_details {
-      width: 80%;
-      margin-top: 30px;
-    }
-    #user_details > h2 {
-      color: rgb(125, 145, 207);
-      font-size: 5vw;
-    }
-    /* project */
-  }
-  
-  @media screen and (max-width: 1420px) {
-    .project-card {
-      flex-direction: column;
-    }
-    .projectimg {
-      align-self: center;
-      width: 100%;
-      max-width: 100%;
-      min-width: 100%;
-      max-height: 50%;
-      min-height: 50%;
-    }
-  }
-  
-
-
-  .mapcontainer{
-    width: 80%;
-    height: 50vh;
-    margin: auto;
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 1px solid red;
-}
-.mapcontainer>h1{
-    line-height: 18px;
-    color: orangered;
-    /* margin-bottom: 10px; */
-}
-iframe{
-    width: 95%;
-    height: 280px;
-    margin-top: 10px;
-    /* filter: invert(100%); */
 }
