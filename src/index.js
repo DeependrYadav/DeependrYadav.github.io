@@ -146,7 +146,7 @@ let projects_array = [
         deployed_link: "https://drive.google.com/file/d/1W5Ca10qmKI2oI58n0a5ZZuh_xFhcpDPl/view?usp=sharing",
     },
     {
-        screenshots: ["./images/Spice_up.png" , "", "", "", ""],
+        screenshots: ["./images/spice_up.png" , "", "", "", ""],
         project_title: "Recipe Management System Application",
         project_desc: "The Recipe Management System is a software solution designed to assist users in managing and organizing their recipes.",
         tech_stacks: "Java | JPA Hibernate | Mysql",
@@ -154,7 +154,7 @@ let projects_array = [
         deployed_link: "https://drive.google.com/file/d/1ODOlSqwrFRDrC-ptwzQATd4ZqwXvZeQQ/view?usp=drive_link",
     },
     {
-        screenshots: ["./images/Book_My_Bus.png" , "", "", "", ""],
+        screenshots: ["./images/book_my_bus.png" , "", "", "", ""],
         project_title: "Book My Bus",
         project_desc: "Book my bus (bus ticket reservation system) is an RESTful web service designed to provide customers with a personalized easy-to-utilize user experience for booking and purchasing tickets online.",
         tech_stacks: "Java | Spring Boot | Mysql | Sprnig Data JPA | Maven | HTML | CSS | JS",
