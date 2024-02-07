@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="ScSZsmUjP-I4LtdGuHNCeRBOSQDXl6w29kh3tdZ8sdA" />
+        <title>Deependra Yadav</title>
+
+        <!-- External icons -->
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/sun.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css">
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/686/686104.png">
+
+        <!-- Internal css -->
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/responsiveness.css">
+        <link rel="stylesheet" href="./css/sidebar.css">
+        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    </head>
+
+    <body>
+        <!-- header here  -->
+        <header>
+
+            <div id="sidebar">
+                <nav role='navigation'>
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu">
+                            <a href="#home"><li>Home</li></a>
+                            <a href="#about"><li>About</li></a>
+                            <a href="#skills"><li>Skills</li></a>
+                            <a href="#projects"><li>Projects</li></a>
+                            <a href="#github"><li>GitHub</li></a>
+                            <a href="#education"><li>Education</li></a>
+                            <a href="#contact"><li>Contact</li></a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div id="nav-menu">
+                <!-- navbar here -->
+                <div id="logo">
+                    Deep<span>endra</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#home" class="nav-link home"><span>Home</span>
+                            <hr class="below-line">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="nav-link about odd-nav"><span>About</span>
+                            <hr class="below-line">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="nav-link skills"><span>Skills</span>
+                            <hr class="below-line">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects" class="nav-link projects odd-nav"><span>Projects</span>
+                            <hr class="below-line">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#github" class="nav-link github"><span>GitHub</span>
+                            <hr class="below-line">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#education" class="nav-link education odd-nav"><span>Education</span>
+                            <hr class="below-line">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav-link contact"><span>Contact</span>
+                            <hr class="below-line">
+                        </a>
+                    </li>
+
+                    <li><button onclick="resume()" id="resume-button-1">
+                            <a href="./resume/Deependra-Yadav-Resume.pdf" target="_blank" download
+                                class="nav-link resume" id="resume-link-1"><span>Resume</span>
+                                <hr class="below-line">
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- <i class="gg-sun sun"></i> -->
+
+                <span class="three-bars">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect x="2" y="5" width="20" height="2" rx="1" ry="1" />
+                        <rect x="2" y="11" width="20" height="2" rx="1" ry="1" />
+                        <rect x="2" y="17" width="20" height="2" rx="1" ry="1" />
+                    </svg>
+
+                </span>
+                <span class="mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                    </svg>
+                </span>
+            </div>
+        </header>
+
+        <!-- Main starts here -->
+
+        <main>
+
+            <section id="home" class="home section even">
+                <div id="back-to-top">
+                    <a href="#home"><img src="./images/top.png" alt=""></a>
+                </div>
+
+                <!-- Home section here -->
+                <div id="home-main">
+
+                    <div id="intro">
+                        <div id="hello">Hello, my name is</div>
+                        <div id="user-detail-name">Deependra Yadav</div>
+                        <div id="user-detail-intro">And I'm a &nbsp; <span class="typing"></span></div>
+                        <div>
+                            <button onclick="resume()" id="resume-button-2">
+                                <a href="./resume/Deependra-Yadav-Resume.pdf" target="_blank" id="resume-link-2"
+                                    download></a>
+                                <!-- <div> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-cloud-arrow-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z" />
+                                    <path
+                                        d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z" />
+                                </svg>
+                                &nbsp; Download Resume
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="image">
+                        <img id="my-image" class="home-img" src="./images/image.png" alt="">
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="about" class="about section odd">
+                <!-- about here -->
+                <div>
+                    <ul>
+                        <li>
+                            <h1>About <span class="me">Me</span></h1>
+                            <hr class="section-line">
+                        </li>
+                    </ul>
+                </div>
+                <div class="max-width">
+                    <div id="intro-block">
+                        <div class="coder-image">
+                            <img src="./images/AboutImg.97f2b188b8af96fb1758.gif" alt="">
+                        </div>
+                        <div class="info-div">
+                            <span>I'm Deependra Yadav and I'm a <span class="typing typing2"></span></span>
+                            <p id="user-detail-intro">
+                                A motivated Java backend developer with a strong foundation in core Java concepts and
+                                skills in the Spring Boot and Hibernate frameworks. Self-motivated and curious learner
+                                with a keen interest in building user-centric products. Proficient in HTML, CSS, and
+                                JavaScript. Looking for a challenging role with a growth-oriented organization.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="skills section even">
+                <!-- skills here -->
+                <div>
+                    <ul>
+                        <li>
+                            <h1><span class="me">My </span>Skills</h1>
+                            <hr class="section-line">
+                        </li>
+                    </ul>
+                </div>
+                <div class="max-width tech-skills">
+                    <!-- skills here -->
+                </div>
+            </section>
+
+            <section id="projects" class="projects section odd">
+                <!-- projects here -->
+                <div>
+                    <ul>
+                        <li>
+                            <h1><span class="me">My </span>Projects</h1>
+                            <hr class="section-line">
+                        </li>
+                    </ul>
+                </div>
+                <div class="max-width">
+                    <div id="project">
+                        <!-- projects will be shown here dynamically -->
+                    </div>
+                </div>
+            </section>
+
+            <section id="github" class="github section even">
+                <div>
+                    <ul>
+                        <li>
+                            <h1><span class="me"> Github </span>stats</h1>
+                            <hr class="section-line">
+                        </li>
+                    </ul>
+                </div>
+                <div id="calender" class="redirect_to_github">
+                    <div class="react-activity-calendar">
+                        <!-- github calender here -->
+                    </div>
+                </div>
+                <div id="other-details">
+                    <div class="redirect_to_github">
+                        <img id="github-streak-stats"
+                            src="https://github-readme-streak-stats.herokuapp.com/?user=deependryadav&theme=dark&theme=default_repocard&title_color='#ffff'"
+                            alt="">
+                    </div>
+
+                    <div class="redirect_to_github">
+                        <img id="github-top-langs"
+                            src="https://github-readme-stats.vercel.app/api/top-langs?username=deependryadav&show_icons=true&locale=en&layout=compact"
+                            alt="">
+                    </div>
+
+                    <div class="redirect_to_github">
+                        <img id="github-stats-card"
+                            src="https://github-readme-stats.vercel.app/api?username=deependryadav&show_icons=true&default_repocard"
+                            alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="education section odd">
+                <div>
+                    <ul>
+                        <li>
+                            <h1>Academic <span class="me"> Details </span></h1>
+                            <hr class="section-line">
+                        </li>
+                    </ul>
+                </div>
+                <div class="max-width">
+                    <div id="edu-info">
+                        <div class="card">
+                            <div class="box">
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
+                                    height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+                                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                        fill="currentcolor" stroke="none">
+                                        <path d="M2488 5099 c-23 -12 -46 -35 -58 -59 -19 -38 -20 -58 -20 -488 l0
+                                    -450 -842 -382 c-464 -211 -853 -390 -865 -397 -37 -24 -66 -96 -58 -144 10
+                                    -56 66 -114 121 -123 40 -7 53 -3 181 51 10 4 13 -311 15 -1500 3 -1503 3
+                                    -1506 24 -1533 11 -15 33 -37 48 -48 27 -20 41 -21 462 -24 l434 -3 0 578 c0
+                                    559 1 579 20 611 11 18 34 41 52 52 32 19 52 20 558 20 506 0 526 -1 558 -20
+                                    18 -11 41 -34 52 -52 19 -32 20 -52 20 -611 l0 -578 434 3 c421 3 435 4 462
+                                    24 15 11 37 33 48 48 21 27 21 30 24 1533 2 1189 5 1504 15 1500 139 -59 138
+                                    -59 189 -47 58 14 103 63 113 122 8 45 -22 117 -58 141 -12 7 -401 186 -864
+                                    397 l-843 382 0 279 0 279 263 0 c293 0 311 3 354 69 21 31 23 46 23 161 0
+                                    115 -2 130 -23 161 -45 68 -51 69 -447 69 -334 -1 -357 -2 -392 -21z m270
+                                    -1952 c99 -34 172 -80 246 -153 246 -245 247 -644 2 -889 -123 -122 -274 -185
+                                    -446 -185 -172 0 -323 63 -445 185 -306 306 -219 822 172 1011 101 49 178 64
+                                    298 60 74 -3 119 -10 173 -29z" />
+                                        <path d="M112 1740 c-18 -4 -45 -18 -59 -31 -54 -51 -53 -29 -53 -839 0 -733
+                                    0 -752 20 -790 13 -26 34 -47 60 -60 36 -19 58 -20 310 -20 l270 0 0 875 0
+                                    875 -257 -1 c-142 -1 -273 -5 -291 -9z" />
+                                        <path d="M4460 876 l0 -876 270 0 c252 0 274 1 310 20 26 13 47 34 60 60 20
+                                    39 20 53 18 804 -3 754 -3 765 -24 792 -11 15 -33 37 -48 48 -26 20 -43 21
+                                    -307 24 l-279 3 0 -875z" />
+                                    </g>
+                                </svg>
+                                <div class="text">Higher Secondary Education</div>
+                                <p>Uttar Pradesh board, Prayagraj </p>
+                                <p>Apr 2016 - May 2018</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
+                                height="512.000000pt" viewBox="0 0 642.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                                    <g 
+                                        fill="currentcolor" stroke="none">
+                                        <path d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438
+                                        19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 
+                                        18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19
+                                        306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73
+                                        4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7
+                                        318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1
+                                        0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z"/>
+                                    </g>
+                                </svg>
+                                <div class="text">Bachelors of Science (Mathmatics)</div>
+                                <p>Bundelkhand university, Jhansi</p>
+                                <p>July 2019 - Sep 2021</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="box">
+                                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
+                                    height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                                    preserveAspectRatio="xMidYMid meet">
+                                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                        fill="currentcolor" stroke="none">
+                                        <path d="M2890 4248 c-25 -14 -57 -42 -72 -64 -21 -30 -124 -379 -463 -1564
+                                    -239 -839 -435 -1541 -435 -1561 0 -52 46 -136 91 -166 54 -35 103 -45 168
+                                    -32 44 9 63 20 100 58 l47 46 437 1530 c252 884 437 1547 437 1571 0 58 -44
+                                    139 -93 172 -58 39 -155 43 -217 10z" />
+                                        <path d="M1210 3617 c-27 -8 -146 -120 -493 -466 -267 -266 -467 -473 -480
+                                    -496 -28 -54 -28 -136 0 -190 13 -23 213 -230 480 -496 391 -389 464 -457 499
+                                    -467 83 -24 149 -8 211 52 57 53 78 121 62 199 -11 51 -19 60 -387 429 l-376
+                                    378 376 378 c365 366 376 378 386 427 36 169 -112 302 -278 252z" />
+                                        <path d="M3767 3616 c-67 -24 -110 -71 -132 -141 -13 -41 -13 -60 -4 -105 l11
+                                    -55 376 -377 376 -378 -376 -378 -376 -377 -11 -55 c-33 -160 109 -292 267
+                                    -250 43 12 83 48 505 469 274 272 467 472 479 496 14 26 21 59 21 95 0 36 -7
+                                    69 -21 95 -12 24 -205 223 -479 496 -391 389 -464 457 -499 467 -53 15 -89 15
+                                    -137 -2z" />
+                                    </g>
+                                </svg>
+                                <div class="text">Java Full-Stack Development</div>
+                                <p>Masai School, Banglore</p>
+                                <p>Nov 2022 - Sep 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact section even">
+                <!-- contact here -->
+                <div>
+                    <ul>
+                        <li><h1><span class="me"> Contact </span>Me</h1><hr class="section-line"></li>
+                    </ul>
+                </div>
+                <div class="contact-parent">
+                    <h2>Get in touch</h2>
+                    <p id="text-contact">If my work and skills attracts you, feel free to connect with me. I would love
+                        to talk and work with you.</p>
+                    <div class="contact-div">
+                        <a href="https://github.com/deependryadav" id="contact-github" target="_blank"><img src="./images/github.svg" alt=""></a>
+                        <a href="https://www.linkedin.com/in/deependra-yadav-185234256/" id="contact-linkedin" target="_blank"><img src="./images/linkedin.svg" alt=""></a>
+                        <a href="tel:+918081466458" id="contact-phone2"><img src="./images/phone.svg" alt="" target="_blank"></a>
+                        <a href="mailto: deependrayadav6306@gmail.com" id="contact-email2"><img src="./images/mail.png" alt="" target="_blank"></a>
+                    </div>
+                    <div class="contact-card">
+                        <img src="./images/person.png" alt="">
+                        <div>
+                            <h3>Name</h3>
+                            <p>Deependra Yadav</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <img src="./images/location.png" alt="">
+                        <div>
+                            <h3>Address</h3>
+                            <p>Jalaun, Uttar Pradesh</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <img src="./images/mail.png" alt="">
+                        <div>
+                            <h3>Email</h3>
+                            <p id="contact-email">deependrayadav6306@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <img src="./images/phone.svg" alt="">
+                        <div>
+                            <h3>Phone</h3>
+                            <p id="contact-phone">+91 8081466458</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- footer starts here -->
+        <footer>
+            <span>Created By <a href="index.html">Deependra</a> | &#169; 2023 All rights reserved.</span>
+        </footer>
+    </body>
+    <!-- scripts here -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./src/index.js"></script>
+</html>

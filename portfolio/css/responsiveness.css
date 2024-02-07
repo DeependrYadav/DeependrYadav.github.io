@@ -1,0 +1,367 @@
+/* *
+ *  Author : Anurag Choudhary
+ *  Github : @anuragjatofficial
+ */
+
+/* file related to responsiveness CSS code  */
+:root {
+
+    --main-color: #008080;
+    --second-color: #ff7f50;
+    --third-color: #e0e0e0;
+    --fourth-color: #333333;
+
+}
+
+/* * 
+ * Large screen sizes
+ */
+
+@media only screen and (max-width:1400px) and (min-width:1300px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .contact-parent {
+        max-width: 110rem !important;
+    }
+
+}
+
+@media only screen and (max-width:1300px) and (min-width:1200px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    #calender {
+        max-width: 110rem;
+    }
+
+    #other-details {
+        max-width: 110rem;
+    }
+
+    #other-details>div {
+        width: 30%;
+    }
+
+    .contact-parent {
+        max-width: 110rem !important;
+    }
+
+}
+
+@media only screen and (max-width:1200px) and (min-width:1100px) {
+
+    html {
+        font-size: 57% !important;
+    }
+
+    #calender {
+        max-width: 100rem;
+    }
+
+    #other-details {
+        max-width: 100rem;
+    }
+
+    #other-details>div {
+        width: 30%;
+    }
+
+    .contact-parent {
+        max-width: 100rem !important;
+    }
+
+}
+
+@media only screen and (max-width:1100px) and (min-width:970px) {
+
+    html {
+        font-size: 50% !important;
+    }
+
+    #calender {
+        max-width: 90rem;
+    }
+
+    #other-details {
+        max-width: 90rem;
+    }
+
+    #other-details>div {
+        width: 30%;
+    }
+
+    .contact-parent {
+        max-width: 90rem !important;
+    }
+
+}
+
+/* *
+ * for tabs like devices 
+ */
+
+@media only screen and (max-width:971px) and (min-width:780px) {
+
+    html {
+        font-size: 40% !important;
+    }
+
+    #calender {
+        max-width: 90rem;
+    }
+
+    #other-details {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #other-details>div {
+        width: 30%;
+    }
+
+    .info-div {
+        font-size: 2.8rem !important;
+    }
+
+    #skills .tech-skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skills-card-name {
+        font-size: 2.1rem !important;
+    }
+
+    .contact-parent {
+        max-width: 90rem !important;
+    }
+
+}
+
+@media only screen and (max-width:779px) and (min-width:680px) {
+
+    html {
+        font-size: 35% !important;
+    }
+
+    #home {
+        height: 80vw;
+    }
+
+    #calender {
+        max-width: 90rem;
+    }
+
+    #other-details {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #other-details>div {
+        width: 30%;
+    }
+
+    .info-div {
+        font-size: 2.8rem !important;
+    }
+
+    #skills .tech-skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skills-card-name {
+        font-size: 2.1rem !important;
+    }
+
+    .contact-parent {
+        max-width: 90rem !important;
+    }
+
+}
+
+/* *  
+ * for mobile devices view 
+ */
+
+@media only screen and (max-width:679px) and (min-width:0px) {
+
+    html {
+        font-size: 55% !important;
+    }
+
+    #nav-menu ul {
+        display: none;
+    }
+
+    header {
+        align-items: center;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+
+    #sidebar {
+        margin-top: 0rem;
+    }
+
+    #sidebar #menuToggle {
+        display: block;
+        margin-top: -1.7rem;
+    }
+
+    #menuToggle span {
+        color: var(--fourth-color);
+    }
+
+    #nav-menu {
+        padding-top: 1rem;
+    }
+
+    #home-main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    #intro {
+        width: 100%;
+        padding: 0rem;
+    }
+
+    #image {
+        text-align: center;
+        width: 100%;
+        align-items: center;
+        background-position-x: center;
+        background-size: auto 96vw;
+    }
+
+    #image #my-image {
+        width: 50%;
+        margin: auto;
+        position: relative;
+        left: 0vw;
+        top: 1rem
+    }
+
+    #intro> :nth-child(4) {
+        margin-left: auto;
+        display: flex;
+        margin-right: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #back-to-top {
+        left: 85vw;
+        top: 92vh;
+    }
+
+    #intro-block {
+        display: flex;
+        flex-direction: column;
+
+        .info-div {
+            padding-right: 0rem;
+            width: 80%;
+        }
+    }
+
+    .info-div>p {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .tech-skills {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .max-width #project {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #calender,
+    #other-details {
+        width: 80%;
+    }
+
+    #other-details {
+        display: grid;
+        gap: 2rem;
+    }
+
+    #edu-info {
+        display: flex;
+        flex-direction: column;
+
+        .card {
+            width: 65%;
+            margin: 4rem 0;
+        }
+
+        margin: 2rem auto;
+    }
+
+    #intro {
+        margin-top: 2rem;
+    }
+
+    .contact-parent {
+        width: 80%;
+    }
+
+}
+
+/* just to cover rest all smaller screen sizes */
+
+@media only screen and (max-width:500px) and (min-width:450px) {
+
+    html {
+        font-size: 48% !important;
+    }
+
+    #menuToggle {
+        position: fixed;
+        top: 10rem;
+    }
+
+}
+
+@media only screen and (max-width:451px) and (min-width:400px) {
+
+    html {
+        font-size: 43% !important;
+    }
+}
+
+@media only screen and (max-width:401px) and (min-width:330px) {
+
+    html {
+        font-size: 35% !important;
+    }
+
+}
+
+@media only screen and (max-width:331px) and (min-width:300px) {
+
+    html {
+        font-size: 30% !important;
+    }
+
+}
+
+@media only screen and (max-width:301px) and (min-width:0px) {
+
+    html {
+        font-size: 25% !important;
+    }
+
+}
