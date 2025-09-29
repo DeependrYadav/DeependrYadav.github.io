@@ -429,3 +429,62 @@ $(document).ready(()=>{
                 )
             }
 })
+
+// Function to calculate and display experience duration dynamically
+function calculateExperience() {
+    // Start date of employment - February 1, 2023
+    const startDate = new Date('2024-02-01');
+    const currentDate = new Date();
+    
+    let years = currentDate.getFullYear() - startDate.getFullYear();
+    let months = currentDate.getMonth() - startDate.getMonth();
+    
+    if (currentDate.getDate() < startDate.getDate()) {
+        months--;
+    }
+    
+    if (months < 0) {
+        years--;
+        months += 12; 
+    }
+    
+     if (years < 0) {
+        years = 0;
+        months = 0;
+    }
+    
+    const totalMonths = (years * 12) + months;
+    
+    let durationText = 'February 2023 – Present';
+    let durationInWords = '';
+
+    if (years > 0) {
+        durationInWords += `${years} Year${years > 1 ? 's' : ''}`;
+        if (months > 0) {
+            durationInWords += ` and ${months} Month${months > 1 ? 's' : ''}`;
+        }
+    } else if (months > 0) {
+        durationInWords += `${months} Month${months > 1 ? 's' : ''}`;
+    } else {
+        durationInWords += 'Less than 1 Month';
+    }
+    
+    if (durationInWords !== 'Less than 1 Month') {
+        durationText += ` (${durationInWords})`;
+    } else {
+        durationText += ` (${durationInWords})`;
+    }
+    
+    console.log(`Duration: ${durationInWords}, Years: ${years}, Remaining months: ${months}, Total months: ${totalMonths}`);
+    
+    const durationElement = document.getElementById('experience-duration');
+    if (durationElement) {
+        durationElement.textContent = durationText;
+        console.log(`Experience duration updated: ${durationText}`);
+    }
+}
+
+$(document).ready(function() {
+    calculateExperience();
+    setInterval(calculateExperience, 60 * 60 * 1000);
+});

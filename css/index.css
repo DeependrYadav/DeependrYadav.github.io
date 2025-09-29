@@ -570,6 +570,86 @@ header {
     font-weight: 400;
 }
 
+/* Experience Section Styles */
+#exp-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.experience-card {
+    width: 80%;
+    max-width: 900px;
+    padding: 3rem 2.5rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, #008080 0%, #009393 100%);
+    box-shadow: 0.8rem 0.8rem 1.6rem rgba(0, 0, 0, 0.1),
+                -0.8rem -0.8rem 1.6rem rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.15),
+                -1rem -1rem 2rem rgba(255, 255, 255, 0.1);
+}
+
+.experience-header {
+    margin-bottom: 2rem;
+}
+
+.job-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.company-name {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #ffcccb;
+}
+
+.duration {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+.experience-content .achievements {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-content .achievements li {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.experience-content .achievements li::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: var(--second-color);
+    font-weight: bold;
+}
+
 /* skills section */
 
 .tech-skills{

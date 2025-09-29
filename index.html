@@ -38,6 +38,7 @@
                             <a href="#home"><li>Home</li></a>
                             <a href="#about"><li>About</li></a>
                             <a href="#skills"><li>Skills</li></a>
+                            <a href="#experience"><li>Experience</li></a>
                             <a href="#projects"><li>Projects</li></a>
                             <a href="#github"><li>GitHub</li></a>
                             <a href="#education"><li>Education</li></a>
@@ -72,7 +73,13 @@
                     </li>
 
                     <li>
-                        <a href="#projects" class="nav-link projects odd-nav"><span>Projects</span>
+                        <a href="#experience" class="nav-link experience odd-nav"><span>Experience</span>
+                            <hr class="below-line">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#projects" class="nav-link projects"><span>Projects</span>
                             <hr class="below-line">
                         </a>
                     </li>
@@ -214,7 +221,45 @@
                 </div>
             </section>
 
-            <section id="projects" class="projects section odd">
+            <section id="experience" class="experience section odd">
+                <!-- experience here -->
+                <div>
+                    <ul>
+                        <li>
+                            <h1>Professional <span class="me">Experience</span></h1>
+                            <hr class="section-line">
+                        </li>
+                    </ul>
+                </div>
+                <div class="max-width">
+                    <div id="exp-info">
+                        <div class="experience-card">
+                            <div class="experience-header">
+                                <h3 class="job-title">Software Development Engineer - I</h3>
+                                <div class="company-info">
+                                    <span class="company-name">Bandhoo.com</span>
+                                    <span class="duration" id="experience-duration">February 2023 – Present</span>
+                                </div>
+                            </div>
+                            <div class="experience-content">
+                                <ul class="achievements">
+                                    <li><strong>API Development & Scale:</strong> Designed and implemented core <strong>RESTful APIs</strong> (Java/Spring Boot) for mission-critical modules, ensuring high availability and successfully handling <strong>50k+ transactions per day</strong>.</li>
+                                    
+                                    <li><strong>Performance & Database Optimization:</strong> Optimized <strong>30% of core transactional APIs</strong> by performing deep-dive SQL query tuning and complex Hibernate mapping adjustments, resulting in a <strong>15% average latency reduction</strong> and improving backend throughput via batched inserts and optimized data ingestion.</li>
+                                    
+                                    <li><strong>AI & Structured Data Automation:</strong> Integrated <strong>Gemini AI (Vertex AI)</strong> for structured data extraction from PDF invoices, achieving a <strong>90% success rate</strong> in automating the parsing of complex, photographed documents. Utilized <strong>OpenCV</strong> to automate QR code extraction, <strong>reducing the manual effort</strong> required for document processing by <strong>25%</strong>.</li>
+                                    
+                                    <li><strong>Quality Assurance & Reliability:</strong> Established robust test automation using <strong>MockMvc</strong> and a custom database cleanup listener, <strong>reducing integration test flakiness by 40%</strong> and ensuring overall backend reliability. Enforced stringent data porting checks in production, maintaining <strong>100% data integrity</strong> during critical migration procedures.</li>
+                                    
+                                    <li><strong>Search Innovation:</strong> Implemented a sophisticated <strong>semantic search</strong> feature using Gemini AI embeddings for the internal FAQ module, significantly enhancing internal knowledge retrieval.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="projects section even">
                 <!-- projects here -->
                 <div>
                     <ul>
@@ -231,7 +276,7 @@
                 </div>
             </section>
 
-            <section id="github" class="github section even">
+            <section id="github" class="github section odd">
                 <div>
                     <ul>
                         <li>
@@ -266,7 +311,7 @@
                 </div>
             </section>
 
-            <section id="education" class="education section odd">
+            <section id="education" class="education section even">
                 <div>
                     <ul>
                         <li>
@@ -361,7 +406,7 @@
                 </div>
             </section>
 
-            <section id="contact" class="contact section even">
+            <section id="contact" class="contact section odd">
                 <!-- contact here -->
                 <div>
                     <ul>
